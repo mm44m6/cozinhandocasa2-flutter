@@ -70,9 +70,9 @@ class RecipeWidget extends StatelessWidget {
           _buildRecipeIconRow(),
           _buildRecipeTitle('Bolo de Milho'),
           _buildRecipeSubtitle('Ingredientes'),
-          _buildRecipeText(''),
+          _buildRecipeText('1 lata de milho verde com água e tudo; 1/2 lata da mesma de óleo; 1 lata da mesma de açúcar; 1/2 lata da mesma de fubá; 4 ovos; 2 colheres bem cheias de farinha de trigo; 2 colheres de coco ralado; 1 colher e 1/2 de chá bem cheia de fermento em pó'),
           _buildRecipeSubtitle('Modo de preparo'),
-          _buildRecipeText('')
+          _buildRecipeText('Bata bastante todos os ingredientes no liquidificador, depois bem batido acrescente o coco ralado e o fermento e misture, coloque para assar. Pode colocar na forma redonda de buraco e na quadrada, a forma deverá ser untada e enfarinhada. O tempo de preparo na redonda é mais rápido, mas a receita fica menor, para aumentar faça 2 vezes. O bolo fica parecendo pamonha, bem cremoso, fica uma delicia! Leve ao forno preaquecido a 180ºC por, aproximadamente, 40 minutos.')
         ]));
   }
 }
