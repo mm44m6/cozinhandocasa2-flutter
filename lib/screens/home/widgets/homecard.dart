@@ -3,20 +3,20 @@ import 'package:flutter/material.dart';
 class HomeCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return _buildCard(context);
+    return _construirCard(context);
   }
 
-  Widget _cardImage() {
+  Widget _construirImagemCard(String imagem) {
     return ClipRRect(
         borderRadius: BorderRadius.all(Radius.circular(6)),
         child: Image.network(
-          'http://www.radio88fm.com/conteudo/receitas/101215_084307.jpg',
+          imagem,
           fit: BoxFit.fill,
           height: 238,
         ));
   }
 
-  Widget _cardImageGradient() {
+  Widget _construirImagemGradienteCard() {
     return Container(
       height: 238,
       decoration: BoxDecoration(
@@ -31,26 +31,25 @@ class HomeCardWidget extends StatelessWidget {
     );
   }
 
-  Widget _cardTitle() {
-    return const Positioned(
+  Widget _construirTituloCard(String titulo) {
+    return Positioned(
         left: 10.0,
         bottom: 10.0,
-        child: Text(
-          'Bolo de milho',
-          style: TextStyle(color: Colors.white, fontSize: 20.0),
+        child: Text(titulo,
+          style: TextStyle(color: Colors.white, fontSize: 20.0)
         ));
   }
 
-  Widget _buildCard(context) => SizedBox(
+  Widget _construirCard(context) => SizedBox(
         height: 270,
         child: Card(
           margin: const EdgeInsets.all(16),
           child: Column(
             children: <Widget>[
               Stack(children: <Widget>[
-                _cardImage(),
-                _cardImageGradient(),
-                _cardTitle()
+                _construirImagemCard('http://www.radio88fm.com/conteudo/receitas/101215_084307.jpg'),
+                _construirImagemGradienteCard(),
+                _construirTituloCard('Bolo de milho')
               ]),
             ],
           ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './widgets/card.dart';
+import './widgets/homecard.dart';
 import '../detalhes/detalhes.dart';
 import '../../widgets/appbar.dart';
 
